@@ -1,4 +1,4 @@
-# TODO: replace with rails 
+// TODO: replace with rails 
 $(document).on("click", "#contact-us-button", function(e) {
   e.preventDefault();
 
@@ -42,4 +42,35 @@ $(document).on("click", "#contact-us-button", function(e) {
       alert("Sorry! we are unable to process your email.")
     }
   });
+});
+
+
+// Owl carousel
+jQuery(document).ready(function($) {
+    var theme_slider = $("#owl-demo");
+          $("#owl-demo").owlCarousel({
+              navigation: false,
+              slideSpeed: 300,
+              paginationSpeed: 400,
+              autoPlay: 6000,
+              addClassActive: true,
+           // transitionStyle: "fade",
+              singleItem: true
+          });
+          $("#owl-demo2").owlCarousel({
+              slideSpeed: 300,
+              autoPlay: true,
+              navigation: true,
+              navigationText: ["&#xf007","&#xf006"],
+              pagination: false,
+              singleItem: true
+          });
+
+          // Custom Navigation Events
+          $(".next-arrow").click(function() {
+              theme_slider.trigger('owl.next');
+          })
+          $(".prev-arrow").click(function() {
+              theme_slider.trigger('owl.prev');
+          })
 });

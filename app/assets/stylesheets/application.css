@@ -1,3 +1,9 @@
+*= require owl.carousel
+*= require owl.theme
+
+
+
+
 /*
  * Components CSS - v3 - 2015-08-22
  * http://www.myresponsee.com
@@ -1923,9 +1929,9 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after, ul.chevron .as
   display: block;
 }
 
-/*
- *  Core Owl Carousel CSS File
- *  v1.24
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.24
  */
 /* clearfix */
 .owl-carousel .owl-wrapper:after {
@@ -2309,8 +2315,8 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after, ul.chevron .as
 }
 
 /*
-*   Owl Carousel Owl Demo Theme
-* v1.24
+* 	Owl Carousel Owl Demo Theme 
+*	v1.24
 */
 .owl-theme .owl-controls {
   margin-top: 10px;
@@ -3080,3 +3086,4 @@ footer a:visited, footer a:hover {
   width: 100%;
   height: 450px;
 }
+

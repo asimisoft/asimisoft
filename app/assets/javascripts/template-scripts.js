@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
           lastId = id;
           menuItems
               .parent().removeClass("active-item")
-              .end().filter("[href=#" + id + "]").parent().addClass("active-item");
+              .end().filter("a[href='" + id + "']").parent().addClass("active-item");
       }
   });
 });  
